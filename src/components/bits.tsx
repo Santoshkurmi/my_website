@@ -39,7 +39,7 @@ export function Counter(props: { value: number; plain?: boolean; duration?: numb
     const d = props.duration ?? 1400;
     const t0 = performance.now();
     const step = (now: number) => {
-      const p = Math.min(1, (now - t0) / d);
+      const p = Math.min(1, Math.max(0, (now - t0) / d)); // rAF time can precede t0
       const e = 1 - Math.pow(1 - p, 4);
       setShown(Math.round(from + (to - from) * e));
       if (p < 1) raf = requestAnimationFrame(step);

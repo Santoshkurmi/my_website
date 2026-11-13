@@ -68,7 +68,7 @@ export default function Atmosphere() {
       let last = performance.now();
       const frame = (now: number) => {
         raf = requestAnimationFrame(frame);
-        const dt = Math.min(0.05, (now - last) / 1000);
+        const dt = Math.max(0, Math.min(0.05, (now - last) / 1000));
         last = now;
         sx += (mx - sx) * 0.04;
         sy += (my - sy) * 0.04;

@@ -125,7 +125,7 @@ export async function startGravity(container: HTMLElement): Promise<GravityWorld
 
   const frame = (now: number) => {
     raf = requestAnimationFrame(frame);
-    const dt = Math.min(32, now - last);
+    const dt = Math.max(1, Math.min(32, now - last));
     last = now;
     if (!visible) return;
     Engine.update(engine, Math.min(dt, 1000 / 60));
