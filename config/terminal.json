@@ -1,0 +1,44 @@
+{
+  "user": "guest",
+  "host": "santosh",
+  "welcome": [
+    "AntiGem shell v1.0 · type 'help' to see what I can do.",
+    "Tip: try 'neofetch', 'gravity on' or 'sudo hire santosh'."
+  ],
+  "commands": [
+    {
+      "name": "coffee",
+      "description": "fuel",
+      "output": ["☕ Brewing... done. Nepali chiya is better though."]
+    },
+    {
+      "name": "nepal",
+      "description": "where I'm from",
+      "output": ["🇳🇵 The only national flag on Earth that is not a rectangle.", "Home of 8 of the 14 highest mountains. Including the tallest."]
+    },
+    {
+      "name": "resume",
+      "description": "open my GitHub profile",
+      "output": ["Opening GitHub, it's the most honest résumé I have..."],
+      "href": "https://github.com/Santoshkurmi"
+    },
+    {
+      "name": "download",
+      "description": "get the AntiGem APK",
+      "output": ["Opening AntiGem releases..."],
+      "href": "https://github.com/santoshkurmi/antigem/releases"
+    },
+    {
+      "name": "rm",
+      "description": "",
+      "hidden": true,
+      "output": ["rm: nice try. This portfolio is read-only, unlike my phone's /system."]
+    },
+    {
+      "name": "vim",
+      "description": "",
+      "hidden": true,
+      "output": ["You're in. Good luck getting out. (Just kidding, Esc closes this.)"]
+    }
+  ]
+}

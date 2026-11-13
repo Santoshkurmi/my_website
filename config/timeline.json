@@ -1,0 +1,71 @@
+{
+  "eyebrow": "Journey",
+  "title": "Trajectory, *upward*",
+  "subtitle": "From a first React Native experiment to an app with a community. Dates are from my GitHub.",
+
+  "items": [
+    {
+      "date": "Mar 2019",
+      "title": "Hello, GitHub",
+      "text": "Account created from Nepal. Bio: “I am good. What else you want to know about me 😔”. Still accurate.",
+      "tags": ["origin"]
+    },
+    {
+      "date": "2021",
+      "title": "First repo",
+      "text": "A React Native app, mostly to learn new things. It started the habit of building to learn.",
+      "tags": ["React Native"]
+    },
+    {
+      "date": "Mid 2023",
+      "title": "Breaking things to understand them",
+      "text": "C pwn exercises, a Go hello world, tinkering with a recovery tree for my Realme 3 Pro, and the first build of my own Arch distro with Hyprland.",
+      "tags": ["C", "Android", "Linux"]
+    },
+    {
+      "date": "Aug 2023",
+      "title": "Writing a language",
+      "text": "Hyper Compiler, my own language in JavaScript. In the same month: a root ISO mounter for Android and a Rust anime downloader.",
+      "tags": ["Compilers", "Rust", "Root"]
+    },
+    {
+      "date": "Late 2023",
+      "title": "Hooking Android",
+      "text": "Xposed modules: invisible Gboard keys for touch-typing practice, and the Nepali date hooked into the system clock.",
+      "tags": ["Xposed", "Java"]
+    },
+    {
+      "date": "2024",
+      "title": "College, shipped",
+      "text": "Loksewa app in Flutter, a C++ compiler, phphelper on Composer, and CodeWave, my 7th-semester project with a word2vec recommender. Then Nepali typing tools and PDF → Unicode.",
+      "tags": ["Flutter", "Laravel", "Python"]
+    },
+    {
+      "date": "2025",
+      "title": "Frameworks and fleets",
+      "text": "Spark, my own virtual-DOM framework. Rust CLIs to update a server full of Laravel apps, zsh helpers, and my first SolidJS experiments.",
+      "tags": ["Rust", "VDOM", "SolidJS"]
+    },
+    {
+      "date": "Aug 2026",
+      "title": "AntiGem lifts off",
+      "text": "An AI coding workspace for Android: four agents, a real Linux, an editor and a browser the agent drives. A custom Termux bootstrap pipeline the same week.",
+      "tags": ["Kotlin", "Go", "AI agents"],
+      "highlight": true,
+      "href": "#antigem"
+    },
+    {
+      "date": "Nov 2026",
+      "title": "An ecosystem in a week",
+      "text": "AntiGem for VS Code (Marketplace + Open VSX), a Chrome bridge, an official plugin repo, signed Termux:X11 and Termux:API builds, and a mini-app store. 123★ and 67 forks.",
+      "tags": ["TypeScript", "Chrome", "Plugins"],
+      "highlight": true
+    },
+    {
+      "date": "Next",
+      "title": "Whatever defies gravity",
+      "text": "If it seems impossible on a phone, that's the next thing I want to try.",
+      "tags": ["∞"]
+    }
+  ]
+}

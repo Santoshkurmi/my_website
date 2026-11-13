@@ -1,0 +1,42 @@
+{
+  "eyebrow": "Polyglot",
+  "title": "The periodic table of *me*",
+  "subtitle": "Every language I've shipped something in. Mass = public repos where it's the main language. Hover an element.",
+
+  "groups": [
+    { "id": "systems", "label": "Systems" },
+    { "id": "mobile", "label": "Mobile" },
+    { "id": "web", "label": "Web" },
+    { "id": "scripting", "label": "Scripting" }
+  ],
+
+  "elements": [
+    { "symbol": "Kt", "name": "Kotlin", "group": "mobile", "mass": 2, "since": 2026, "color": "#A97BFF", "usedIn": ["AntiGem (Jetpack Compose)", "POS thermal printer"], "note": "The whole AntiGem Android app: Compose UI, terminal, editor, browser, MCP servers." },
+    { "symbol": "Go", "name": "Go", "group": "systems", "mass": 1, "since": 2023, "color": "#00ADD8", "usedIn": ["agy_ide_bridge", "nic"], "note": "AntiGem's bridge: supervises Claude Code, OpenCode, Codex and the agy hub." },
+    { "symbol": "Rs", "name": "Rust", "group": "systems", "mass": 3, "since": 2023, "color": "#F0835A", "usedIn": ["Sahakari CLI", "Animeflix downloader", "App builder server"], "note": "CLIs and servers that have to be fast and correct." },
+    { "symbol": "C", "name": "C", "group": "systems", "mass": 3, "since": 2023, "color": "#8FA3B8", "usedIn": ["pwn experiments", "Metis installer"], "note": "Binary exploitation practice and low-level poking." },
+    { "symbol": "C+", "name": "C++", "group": "systems", "mass": 1, "since": 2024, "color": "#F34B7D", "usedIn": ["compiler_using_cplus"], "note": "A compiler built on the textbook algorithms." },
+    { "symbol": "Jv", "name": "Java", "group": "mobile", "mass": 4, "since": 2023, "color": "#E8A23B", "usedIn": ["Xposed hooks", "Keyboard blacker", "Termux:X11 / API builds"], "note": "Hooking Android framework methods with Xposed." },
+    { "symbol": "Dt", "name": "Dart", "group": "mobile", "mass": 1, "since": 2024, "color": "#40C4FF", "usedIn": ["Loksewa App"], "note": "Flutter + Firebase apps." },
+    { "symbol": "Ts", "name": "TypeScript", "group": "web", "mass": 10, "since": 2023, "color": "#3B82F6", "usedIn": ["AntiGem for VS Code", "CodeWave", "Nepali Typing", "EduStream"], "note": "Most of my web work, and the VS Code extension." },
+    { "symbol": "Js", "name": "JavaScript", "group": "web", "mass": 11, "since": 2021, "color": "#F7DF1E", "usedIn": ["Spark framework", "Hyper Compiler", "Browser Bridge", "Mini apps"], "note": "Where it started. Now also a virtual DOM and a language of my own." },
+    { "symbol": "Ph", "name": "PHP", "group": "web", "mass": 2, "since": 2024, "color": "#8B93E6", "usedIn": ["phphelper (Composer)", "Laravel backends"], "note": "Laravel at work, and a micro-framework of my own." },
+    { "symbol": "Ht", "name": "HTML / CSS", "group": "web", "mass": 11, "since": 2022, "color": "#E96B44", "usedIn": ["Metis OS site", "PSC Nepali typing"], "note": "The fundamentals, every single day." },
+    { "symbol": "Py", "name": "Python", "group": "scripting", "mass": 5, "since": 2022, "color": "#4B8BBE", "usedIn": ["PDF → Unicode", "word2vec recommender", "Nepali calendar"], "note": "Glue, data and text wrangling." },
+    { "symbol": "Sh", "name": "Shell", "group": "scripting", "mass": 5, "since": 2023, "color": "#89E051", "usedIn": ["Termux bootstrap", "ISO mounter", "db_utils", "server_helper"], "note": "Build pipelines, root scripts and server automation." },
+    { "symbol": "Lu", "name": "Lua", "group": "scripting", "mass": 1, "since": 2024, "color": "#6F7BFF", "usedIn": ["Neovim config"], "note": "Configuring the editor I live in." },
+    { "symbol": "Pl", "name": "Perl", "group": "scripting", "mass": 1, "since": 2023, "color": "#5BA0C8", "usedIn": ["Realme bootloader unlocker (modified)"], "note": "Adapted a community script to unlock a Realme bootloader." },
+    { "symbol": "Sq", "name": "SQL", "group": "scripting", "mass": 0, "since": 2023, "color": "#E38C00", "usedIn": ["Laravel apps", "db_utils", "server_helper"], "note": "MySQL behind most of the web apps." }
+  ],
+
+  "series": [
+    {
+      "label": "Frameworks",
+      "items": ["Jetpack Compose", "SolidJS", "React", "React Native", "Flutter", "Laravel", "Tailwind", "Vite", "Electron", "Firebase"]
+    },
+    {
+      "label": "Lives in",
+      "items": ["Neovim", "Hyprland", "Arch Linux", "Termux", "Xposed", "ADB", "GitHub Actions", "SSH", "MCP"]
+    }
+  ]
+}

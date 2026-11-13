@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{lang}}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}" />
+    <meta name="theme-color" content="{{themeColor}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:url" content="{{url}}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="{{favicon}}" type="image/svg+xml" />
+    <style>
+      html { background: {{themeColor}}; color-scheme: dark; }
+      body { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <noscript>This portfolio needs JavaScript. Meanwhile: https://github.com/Santoshkurmi</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>

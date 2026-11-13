@@ -1,0 +1,65 @@
+{
+  "name": "Santosh Kurmi",
+  "firstName": "Santosh",
+  "lastName": "Kurmi",
+  "handle": "Santoshkurmi",
+  "avatar": "assets/avatar.png",
+  "location": "Nepal",
+  "coords": "28.39°N · 84.12°E",
+  "status": "Building AntiGem",
+
+  "headline": {
+    "prefix": "I build",
+    "rotating": [
+      "AI coding agents for your phone",
+      "things that defy gravity",
+      "Android internals",
+      "my own Linux distro",
+      "compilers, for fun",
+      "tools I wish existed"
+    ]
+  },
+
+  "intro": "Developer from Nepal. I turn phones into full dev machines, take operating systems apart to see how they tick, and write the tools I wish already existed.",
+
+  "cta": {
+    "primary": { "label": "Explore AntiGem", "href": "#antigem" },
+    "secondary": { "label": "Open terminal", "action": "terminal" }
+  },
+
+  "stats": [
+    { "label": "Stars on AntiGem", "value": 123, "live": "repo:antigem:stars", "suffix": "★" },
+    { "label": "Forks on AntiGem", "value": 67, "live": "repo:antigem:forks" },
+    { "label": "Public repos", "value": 71, "live": "user:public_repos" },
+    { "label": "On GitHub since", "value": 2019, "plain": true }
+  ],
+
+  "about": {
+    "eyebrow": "About",
+    "title": "Curious by *default*",
+    "statement": "I'm Santosh, a CSIT student from Nepal who can't leave things alone. I root phones to hook their system clock into the Nepali calendar, build my own Arch distro in CI, write languages to understand compilers, and lately I put Claude Code, Codex, OpenCode and Antigravity inside a pocket-sized Android IDE that people actually use.",
+    "facts": [
+      { "k": "Based in", "v": "Nepal 🇳🇵" },
+      { "k": "Studying", "v": "B.Sc. CSIT" },
+      { "k": "Daily driver", "v": "Neovim · Hyprland · Termux" },
+      { "k": "Currently", "v": "Shipping AntiGem" },
+      { "k": "Bio, per GitHub", "v": "“I am good. What else you want to know about me 😔”" }
+    ]
+  },
+
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something that *defies gravity*.",
+    "text": "Have an idea, a bug in AntiGem, or a phone that needs to become a dev machine? Reach out. I read everything.",
+    "primary": { "label": "Say hi on GitHub", "href": "https://github.com/Santoshkurmi" }
+  },
+
+  "socials": [
+    { "label": "GitHub", "handle": "@Santoshkurmi", "href": "https://github.com/Santoshkurmi", "icon": "github" },
+    { "label": "AntiGem community", "handle": "WhatsApp group", "href": "https://chat.whatsapp.com/IGQX8q9zSVV0RarG70sclV?s=cl&p=a&mlu=4&ilr=4", "icon": "whatsapp" },
+    { "label": "AntiGem for VS Code", "handle": "Marketplace", "href": "https://marketplace.visualstudio.com/items?itemName=santoshkurmi.antigem-vscode-extension", "icon": "vscode" },
+    { "label": "Email", "handle": "you@example.com", "href": "mailto:you@example.com", "icon": "mail", "enabled": false },
+    { "label": "LinkedIn", "handle": "your-handle", "href": "https://www.linkedin.com/in/your-handle", "icon": "linkedin", "enabled": false },
+    { "label": "X / Twitter", "handle": "@idontknow", "href": "https://x.com/idontknow", "icon": "x", "enabled": false }
+  ]
+}

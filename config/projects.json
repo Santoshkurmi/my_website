@@ -1,0 +1,485 @@
+{
+  "eyebrow": "Selected work",
+  "title": "Things I took *apart*, and built",
+  "subtitle": "Not everything on my GitHub is worth your time. These are.",
+  "categories": [
+    {
+      "id": "all",
+      "label": "Everything"
+    },
+    {
+      "id": "systems",
+      "label": "Systems & Linux"
+    },
+    {
+      "id": "android",
+      "label": "Android"
+    },
+    {
+      "id": "languages",
+      "label": "Languages & Frameworks"
+    },
+    {
+      "id": "web",
+      "label": "Web & Apps"
+    },
+    {
+      "id": "tools",
+      "label": "CLI & Tools"
+    }
+  ],
+  "items": [
+    {
+      "id": "termux-bootstrap",
+      "name": "Termux Bootstrap Builder",
+      "repo": "termux-bootstrap",
+      "tagline": "Relocating a whole Linux userland to a new package name",
+      "description": "Termux binaries hard-code /data/data/com.termux into their ELF interpreter, RUNPATH and shebangs, and a one-character-longer package name means you can't just hex-edit them. This GitHub Actions pipeline rebuilds the bootstrap from source for com.antigem, so AntiGem's standard variant can ship its own Linux environment.",
+      "highlights": [
+        "Explains and fixes PT_INTERP / DT_RUNPATH path breakage",
+        "Fully automated aarch64 bootstrap builds in CI",
+        "Powers the Linux environment behind AntiGem"
+      ],
+      "tech": [
+        "Bash",
+        "GitHub Actions",
+        "ELF",
+        "Termux",
+        "aarch64"
+      ],
+      "language": "Shell",
+      "category": "systems",
+      "year": 2026,
+      "size": "lg",
+      "cover": {
+        "pattern": "grid",
+        "glyph": ">_"
+      }
+    },
+    {
+      "id": "hyprland-arch",
+      "name": "Hyprland Arch",
+      "repo": "hyprland_arch",
+      "tagline": "My own Arch Linux distro, built in CI",
+      "description": "A custom Arch ISO built with archiso inside a GitHub workflow: Hyprland on Wayland, a Calamares GUI installer, offline installation, and a JSON config you edit in Vim to set partitions, user and bootloader before installing.",
+      "highlights": [
+        "Bootable ISO published from GitHub Actions releases",
+        "Offline install with a scripted, JSON-configured installer",
+        "Batteries included: kitty, Waybar, PipeWire, NvChad, VS Code, OBS"
+      ],
+      "tech": [
+        "archiso",
+        "Hyprland",
+        "Wayland",
+        "Calamares",
+        "CI"
+      ],
+      "language": "Shell",
+      "category": "systems",
+      "year": 2023,
+      "size": "wide",
+      "cover": {
+        "pattern": "contour",
+        "glyph": "▲"
+      }
+    },
+    {
+      "id": "hyper-compiler",
+      "name": "Hyper Compiler",
+      "repo": "hyper_compiler",
+      "tagline": "My own programming language",
+      "description": "A programming language of my own, written in JavaScript to learn compiler design by actually building one. Followed by a C++ compiler project built on the classic compiler-design algorithms.",
+      "highlights": [
+        "Language designed and implemented from scratch in JavaScript",
+        "Learning compiler design by doing",
+        "Sequel in C++: compiler_using_cplus"
+      ],
+      "tech": [
+        "JavaScript",
+        "C++",
+        "Compiler design"
+      ],
+      "language": "JavaScript",
+      "category": "languages",
+      "year": 2023,
+      "size": "tall",
+      "cover": {
+        "pattern": "tree",
+        "glyph": "λ"
+      },
+      "links": [
+        {
+          "label": "C++ compiler",
+          "href": "https://github.com/Santoshkurmi/compiler_using_cplus"
+        }
+      ]
+    },
+    {
+      "id": "realme-xposed",
+      "name": "Realme Xposed Hooks",
+      "repo": "realme_xposed_hooks",
+      "tagline": "Nepali date, hooked into Android's system clock",
+      "description": "Xposed hooks for my own phone: they put the Nepali (Bikram Sambat) date into the system UI by hooking system time and date, plus app mods and hooks for debugging and reverse engineering apps.",
+      "highlights": [
+        "System-wide Bikram Sambat date via method hooking",
+        "App modding and RE helpers",
+        "Sibling project: an Xposed module that makes Gboard keys invisible for touch-typing practice"
+      ],
+      "tech": [
+        "Java",
+        "Xposed",
+        "Android",
+        "Reverse engineering"
+      ],
+      "language": "Java",
+      "category": "android",
+      "year": 2023,
+      "size": "wide",
+      "cover": {
+        "pattern": "rings",
+        "glyph": "२०८३"
+      },
+      "links": [
+        {
+          "label": "Keyboard blacker",
+          "href": "https://github.com/Santoshkurmi/xposed_keyboard_blacker"
+        }
+      ]
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "repo": "spark_web_framework",
+      "tagline": "A web framework, from my own virtual DOM",
+      "description": "A self-made web framework built on its own virtual DOM, written to understand what React actually does under the hood.",
+      "highlights": [
+        "Built on its own virtual DOM",
+        "No dependencies, just the idea"
+      ],
+      "tech": [
+        "JavaScript",
+        "Virtual DOM"
+      ],
+      "language": "JavaScript",
+      "category": "languages",
+      "year": 2025,
+      "size": "tall",
+      "cover": {
+        "pattern": "nodes",
+        "glyph": "</>"
+      }
+    },
+    {
+      "id": "codewave",
+      "name": "CodeWave",
+      "repo": "codewave",
+      "tagline": "Stack Overflow meets a social feed",
+      "description": "My 7th-semester CSIT project: a platform for coders to share problems and ideas. Real-time messaging, posts with syntax-highlighted code and images, runnable JS and Python snippets, voting, views, profiles, and a word2vec post recommender in Python. Built in about a month.",
+      "highlights": [
+        "Real-time chat and code-aware posts",
+        "Run JS / Python snippets right from a post",
+        "word2vec recommendation engine"
+      ],
+      "tech": [
+        "React",
+        "Laravel",
+        "Python",
+        "word2vec",
+        "Realtime"
+      ],
+      "language": "TypeScript",
+      "category": "web",
+      "year": 2024,
+      "size": "wide",
+      "cover": {
+        "pattern": "waves",
+        "glyph": "{ }"
+      },
+      "links": [
+        {
+          "label": "Demo video",
+          "href": "https://youtu.be/icG9_qXU0_w"
+        }
+      ]
+    },
+    {
+      "id": "sahakari-cli",
+      "name": "Sahakari CLI",
+      "repo": "sahakari_cli_tool",
+      "tagline": "Update a fleet of Laravel apps with one command",
+      "description": "A Rust CLI that updates many Laravel projects hosted on one server: update all or one, dry runs, error reports, verbose mode, forced updates and logs of previous runs.",
+      "highlights": [
+        "--dry-run, --errors, --force",
+        "Operation logs and config"
+      ],
+      "tech": [
+        "Rust",
+        "CLI",
+        "Laravel",
+        "DevOps"
+      ],
+      "language": "Rust",
+      "category": "tools",
+      "year": 2025,
+      "size": "sm",
+      "cover": {
+        "pattern": "bars",
+        "glyph": "$"
+      }
+    },
+    {
+      "id": "nepali-typing",
+      "name": "Nepali Typing",
+      "repo": "nepali_typing",
+      "tagline": "Type Nepali on the web",
+      "description": "A web app for typing Nepali, plus a PSC (Public Service Commission) typing-practice version for exam preparation.",
+      "highlights": [
+        "Live on Vercel",
+        "PSC exam practice variant"
+      ],
+      "tech": [
+        "TypeScript",
+        "React",
+        "Vite"
+      ],
+      "language": "TypeScript",
+      "category": "web",
+      "year": 2024,
+      "size": "sm",
+      "cover": {
+        "pattern": "waves",
+        "glyph": "क"
+      },
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://nepali-typing.vercel.app"
+        }
+      ]
+    },
+    {
+      "id": "pdf-to-unicode",
+      "name": "PDF → Unicode",
+      "repo": "pdf_to_unicode",
+      "tagline": "Rescuing Nepali text from scrambled PDFs",
+      "description": "Copying text out of many Nepali PDFs gives garbage because of legacy fonts or deliberate scrambling. This Python tool maps glyphs back to Unicode by hand so the text comes out readable.",
+      "highlights": [
+        "Manual glyph → Unicode mapping",
+        "Extensible to other fonts and scripts"
+      ],
+      "tech": [
+        "Python",
+        "PDF",
+        "Unicode",
+        "Fonts"
+      ],
+      "language": "Python",
+      "category": "tools",
+      "year": 2024,
+      "size": "sm",
+      "cover": {
+        "pattern": "grid",
+        "glyph": "अ"
+      }
+    },
+    {
+      "id": "loksewa",
+      "name": "Loksewa App",
+      "repo": "loksewa_app",
+      "tagline": "MCQ prep for Nepal's civil service exam",
+      "description": "A Flutter + Firebase Android app with categorized GK and IQ multiple-choice questions, authentication and an admin panel to add questions.",
+      "highlights": [
+        "Firebase auth and admin panel",
+        "Categorized MCQs"
+      ],
+      "tech": [
+        "Flutter",
+        "Dart",
+        "Firebase"
+      ],
+      "language": "Dart",
+      "category": "android",
+      "year": 2024,
+      "size": "sm",
+      "cover": {
+        "pattern": "rings",
+        "glyph": "?"
+      }
+    },
+    {
+      "id": "phphelper",
+      "name": "phphelper",
+      "repo": "phpbare",
+      "tagline": "A tiny PHP MVC library, on Composer",
+      "description": "For people who find Laravel too heavy and raw PHP too repetitive: routing, controllers, middleware, MySQL, request/response, sessions and auth in four or five helper classes. Published on Composer.",
+      "highlights": [
+        "composer require phphelper/phphelper",
+        "Routing, middleware, auth"
+      ],
+      "tech": [
+        "PHP",
+        "Composer",
+        "MVC"
+      ],
+      "language": "PHP",
+      "category": "languages",
+      "year": 2024,
+      "size": "sm",
+      "cover": {
+        "pattern": "nodes",
+        "glyph": "<?"
+      }
+    },
+    {
+      "id": "iso-mounter",
+      "name": "Android ISO Mounter",
+      "repo": "android_iso_mounter_root",
+      "tagline": "Boot a PC from an ISO on your phone",
+      "description": "A root shell script that mounts an ISO on the phone so a PC can boot from it, like a USB drive. An alternative for devices DriveDroid doesn't support.",
+      "highlights": [
+        "Works where DriveDroid doesn't",
+        "Root + a couple of path variables"
+      ],
+      "tech": [
+        "Bash",
+        "Android",
+        "Root"
+      ],
+      "language": "Shell",
+      "category": "android",
+      "year": 2023,
+      "size": "sm",
+      "cover": {
+        "pattern": "contour",
+        "glyph": "◉"
+      }
+    }
+  ],
+  "archive": {
+    "eyebrow": "Archive",
+    "title": "The rest of the *lab*",
+    "subtitle": "Experiments, coursework and tools I built for myself.",
+    "initial": 8,
+    "items": [
+      {
+        "name": "compiler_using_cplus",
+        "repo": "compiler_using_cplus",
+        "description": "Compiler built with compiler-design algorithms in C++",
+        "language": "C++",
+        "year": 2024
+      },
+      {
+        "name": "xposed_keyboard_blacker",
+        "repo": "xposed_keyboard_blacker",
+        "description": "Makes Gboard keys invisible to practice touch typing",
+        "language": "Java",
+        "year": 2023
+      },
+      {
+        "name": "animeflix-downloader",
+        "repo": "animeflix-anime-downloader",
+        "description": "Command-line anime downloader (the site is gone now)",
+        "language": "Rust",
+        "year": 2023
+      },
+      {
+        "name": "server_helper",
+        "repo": "server_helper",
+        "description": "zsh + fzf: jump to any project and open its MySQL from .env",
+        "language": "Shell",
+        "year": 2025
+      },
+      {
+        "name": "db_utils",
+        "repo": "db_utils",
+        "description": "One-click dump and restore of server databases over SSH",
+        "language": "Shell",
+        "year": 2025
+      },
+      {
+        "name": "edustream",
+        "repo": "edustream",
+        "description": "Educational video platform with React 19, TypeScript and Tailwind",
+        "language": "TypeScript",
+        "year": 2025
+      },
+      {
+        "name": "pro_cache",
+        "repo": "pro_cache_testing",
+        "description": "Caching library for frontend and backend",
+        "language": "TypeScript",
+        "year": 2026
+      },
+      {
+        "name": "app_builder_rust_server",
+        "repo": "app_builder_rust_server",
+        "description": "App build server in Rust",
+        "language": "Rust",
+        "year": 2025
+      },
+      {
+        "name": "gitea-issue-vscode-extension",
+        "repo": "gitea-issue-vscode-extension",
+        "description": "Gitea issues inside VS Code",
+        "language": "JavaScript",
+        "year": 2026
+      },
+      {
+        "name": "nepali_calendar_date",
+        "repo": "nepali_calendar_date",
+        "description": "Decodes Nepali calendar dates into JSON ranges with Python",
+        "language": "Python",
+        "year": 2026
+      },
+      {
+        "name": "recomm",
+        "repo": "recomm",
+        "description": "Recommendation experiments in Python",
+        "language": "Python",
+        "year": 2024
+      },
+      {
+        "name": "speed_typing_electron_app",
+        "repo": "speed_typing_electron_app",
+        "description": "Desktop speed-typing trainer in Electron",
+        "language": "TypeScript",
+        "year": 2024
+      },
+      {
+        "name": "my_neovim_config",
+        "repo": "my_neovim_config",
+        "description": "My Neovim setup, in Lua",
+        "language": "Lua",
+        "year": 2024
+      },
+      {
+        "name": "pos_therma_printer_test",
+        "repo": "pos_therma_printer_test",
+        "description": "Talking to POS thermal printers from Android",
+        "language": "Kotlin",
+        "year": 2026
+      },
+      {
+        "name": "roomsewa",
+        "repo": "roomsewa",
+        "description": "A web app in PHP",
+        "language": "PHP",
+        "year": 2024
+      },
+      {
+        "name": "metis_website",
+        "repo": "metis_website",
+        "description": "Website for Metis OS",
+        "language": "CSS",
+        "year": 2023
+      },
+      {
+        "name": "nic",
+        "repo": "nic",
+        "description": "First steps in Go",
+        "language": "Go",
+        "year": 2023
+      }
+    ]
+  }
+}

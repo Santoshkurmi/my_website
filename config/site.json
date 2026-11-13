@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Santosh Kurmi — I build things that defy gravity",
+    "description": "Portfolio of Santosh Kurmi, a developer from Nepal. Creator of AntiGem, an AI coding workspace for Android. Android internals, Linux distros, compilers and developer tools.",
+    "url": "https://santoshkurmi.github.io/",
+    "themeColor": "#06050d",
+    "lang": "en",
+    "favicon": "favicon.svg"
+  },
+
+  "github": {
+    "username": "Santoshkurmi",
+    "live": true,
+    "cacheMinutes": 60
+  },
+
+  "theme": {
+    "default": "nebula",
+    "allowSwitch": true,
+    "remember": true
+  },
+
+  "effects": {
+    "particles": true,
+    "particleDensity": 1,
+    "cursorGlow": true,
+    "grain": true,
+    "tilt": true,
+    "reveal": true,
+    "viewTransitions": true
+  },
+
+  "nav": {
+    "show": true,
+    "logo": "santosh",
+    "terminalButton": true
+  },
+
+  "layout": {
+    "maxWidth": 1240,
+    "sections": [
+      {
+        "id": "home",
+        "type": "hero",
+        "variant": "gravity",
+        "props": {
+          "gem": true,
+          "gravitySwitch": true,
+          "mountains": true,
+          "mountainLabel": "▲ Sagarmatha · 8,849 m",
+          "hud": true
+        }
+      },
+      { "id": "about", "type": "about", "nav": "About" },
+      {
+        "id": "antigem",
+        "type": "ecosystem",
+        "nav": "AntiGem",
+        "props": { "phone": true, "orbit": true, "architecture": true }
+      },
+      {
+        "id": "marquee-skills",
+        "type": "marquee",
+        "props": {
+          "speed": 38,
+          "items": ["Android internals", "AI coding agents", "Compilers", "Linux distros", "Rust CLIs", "Reverse engineering", "Xposed hooks", "Termux", "MCP servers", "VS Code extensions"]
+        }
+      },
+      { "id": "work", "type": "projects", "nav": "Work", "variant": "bento" },
+      { "id": "archive", "type": "archive" },
+      { "id": "stack", "type": "languages", "nav": "Stack", "variant": "periodic" },
+      { "id": "journey", "type": "timeline", "nav": "Journey", "variant": "alternate" },
+      {
+        "id": "marquee-nepal",
+        "type": "marquee",
+        "props": {
+          "speed": 46,
+          "reverse": true,
+          "items": ["Made in Nepal", "नमस्ते", "Open source", "Built on a phone", "Defy gravity", "Ship it"]
+        }
+      },
+      { "id": "contact", "type": "contact", "nav": "Contact" }
+    ]
+  },
+
+  "footer": {
+    "note": "Finally bought a website. Just kidding, it's free on GitHub Pages.",
+    "builtWith": "Built with SolidJS, a canvas gem and zero gravity.",
+    "hint": "Psst. Press ⌘K / Ctrl K, or ` to open the terminal."
+  }
+}

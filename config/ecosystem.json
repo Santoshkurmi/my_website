@@ -1,0 +1,91 @@
+{
+  "eyebrow": "Flagship · 2026",
+  "title": "AntiGem, a gem that *defies gravity*",
+  "tagline": "A full coding environment, light enough to carry in your pocket.",
+  "description": "An AI coding workspace for Android. Antigravity, Claude Code, OpenCode and Codex agents, a real Linux terminal, a code editor and a browser the agent can control, all in one app. Written from scratch in Kotlin + Jetpack Compose, with a Go bridge that supervises every agent.",
+  "repo": "antigem",
+  "icon": "assets/antigem/icon.svg",
+
+  "links": [
+    { "label": "Download APK", "href": "https://github.com/santoshkurmi/antigem/releases", "primary": true },
+    { "label": "Website", "href": "https://santoshkurmi.github.io/antigem/" },
+    { "label": "Source", "href": "https://github.com/Santoshkurmi/antigem" }
+  ],
+
+  "metrics": [
+    { "value": "123", "live": "repo:antigem:stars", "label": "GitHub stars", "suffix": "★" },
+    { "value": "4", "label": "AI agents, one app" },
+    { "value": "10", "label": "built-in MCP servers" },
+    { "value": "200+", "label": "model providers" }
+  ],
+
+  "agents": ["Claude Code", "Codex", "OpenCode", "Antigravity"],
+
+  "features": [
+    { "icon": "◆", "title": "Agents that actually code", "text": "Streaming replies, tool approvals, plans, subagents and diffs, parsed from each CLI's structured output. Not terminal scraping." },
+    { "icon": ">_", "title": "A real Linux, no root", "text": "Termux-based environment with apt, Python, Node, Go and Git at native speed. No root, no proot." },
+    { "icon": "◎", "title": "A browser the agent drives", "text": "Built-in browser plus Browser, Terminal, Android, Notes and Theme MCPs, one tap away for every agent." },
+    { "icon": "♪", "title": "Jarvis voice mode", "text": "Hand over a whole task by voice. It tells you when it's done, stuck, or needs your approval, even with the screen off." },
+    { "icon": "⇄", "title": "Phone ⇄ PC", "text": "Pair with AntiGem for VS Code over SSH + SPAKE2. Same chats on both screens, files copy across." },
+    { "icon": "⬡", "title": "Plugin SDK", "text": "Plugins add MCP tools and skills, running in an extension host that implements much of the Chrome extension API." },
+    { "icon": "▲", "title": "Build Android apps on Android", "text": "Kotlin/Compose, Flutter and React Native builds on the phone itself, driven by the agent." },
+    { "icon": "☁", "title": "Server mode", "text": "Move the bridge and agents to your VPS over an SSH tunnel. The phone becomes the screen." }
+  ],
+
+  "screens": [
+    { "src": "assets/antigem/agent_picker.webp", "caption": "Four agents, one app" },
+    { "src": "assets/antigem/chat_agent_working.webp", "caption": "Thinking, to-dos and live edits" },
+    { "src": "assets/antigem/code_editor.webp", "caption": "Code editor" },
+    { "src": "assets/antigem/terminal_fastfetch.webp", "caption": "Real Linux terminal" },
+    { "src": "assets/antigem/browser_live_preview.webp", "caption": "Live preview in the browser" },
+    { "src": "assets/antigem/solar_system.webp", "caption": "Built from one prompt" },
+    { "src": "assets/antigem/model_picker_usage.webp", "caption": "Models and plan usage" },
+    { "src": "assets/antigem/mcp_presets.webp", "caption": "One-tap MCP servers" }
+  ],
+
+  "orbit": {
+    "title": "The AntiGem *universe*",
+    "text": "One app grew into a small ecosystem in under three months. Tap a satellite.",
+    "center": {
+      "name": "AntiGem",
+      "lang": "Kotlin · Go",
+      "description": "The Android app: Compose UI, terminal, editor, browser, MCP servers, Jarvis, and the Go bridge (agy_ide_bridge) that starts and supervises every agent.",
+      "href": "https://github.com/Santoshkurmi/antigem"
+    },
+    "rings": [
+      [
+        { "name": "VS Code Extension", "glyph": "⌘", "lang": "TypeScript", "description": "The same agents and chat UI in a VS Code sidebar. Published on the VS Code Marketplace and Open VSX. Connect phone makes your phone a second screen.", "href": "https://github.com/Santoshkurmi/antigem_vscode_extension" },
+        { "name": "Browser Bridge", "glyph": "◎", "lang": "JavaScript", "description": "Chrome extension plus native messaging host that lets agents in VS Code drive your real browser: click, type, screenshot, run JS, read network logs.", "href": "https://github.com/Santoshkurmi/antigem-browser-extension" },
+        { "name": "Plugins", "glyph": "⬡", "lang": "Shell", "description": "Official plugin repo: REA (reverse engineering), Android-dev toolchain and browser skills. The app checks it for updates in the background.", "href": "https://github.com/Santoshkurmi/antigem_plugins" }
+      ],
+      [
+        { "name": "Mini Apps", "glyph": "▦", "lang": "JavaScript", "description": "An app store inside the app: HTML/JS mini apps with their own icon and Recents card, signed .agapp packages and a publish tool.", "href": "https://github.com/Santoshkurmi/antigem_mini_apps" },
+        { "name": "Bootstrap Builder", "glyph": ">_", "lang": "Shell", "description": "CI that builds custom Termux bootstraps for a different package name, solving hard-coded ELF interpreter and RUNPATH paths.", "href": "https://github.com/Santoshkurmi/termux-bootstrap" },
+        { "name": "Termux:X11", "glyph": "▣", "lang": "Java", "description": "AntiGem's build of Termux:X11, signed to share the com.termux UID so an XFCE or LXQt desktop runs inside AntiGem.", "href": "https://github.com/Santoshkurmi/termux-x11" },
+        { "name": "Termux:API", "glyph": "⚡", "lang": "Java", "description": "Signed companion app for hardware APIs (location, camera, sensors, SMS) over the shared UID.", "href": "https://github.com/Santoshkurmi/termux-api" },
+        { "name": "agy hub proxy", "glyph": "⇆", "lang": "JavaScript", "description": "Handles Antigravity's agy --hub feature to build a clean proxy in front of it.", "href": "https://github.com/Santoshkurmi/agy_cli_hub" }
+      ]
+    ]
+  },
+
+  "architecture": {
+    "title": "How it *works*",
+    "text": "The app never scrapes a terminal. A Go bridge speaks each agent's native protocol and streams structured events to the Compose UI.",
+    "nodes": [
+      { "id": "app", "label": "AntiGem Android app", "sub": "Compose UI · terminal · editor · browser · MCPs · Jarvis", "x": 500, "y": 70, "w": 520, "h": 84, "accent": 1 },
+      { "id": "bridge", "label": "agy_ide_bridge (Go)", "sub": "Git · files · plugins · agent relays", "x": 360, "y": 285, "w": 380, "h": 84, "accent": 2 },
+      { "id": "hub", "label": "Antigravity hub", "sub": "agy --hub", "x": 830, "y": 285, "w": 250, "h": 84, "accent": 3 },
+      { "id": "claude", "label": "Claude Code", "sub": "one process per chat", "x": 140, "y": 500, "w": 230, "h": 80, "accent": 1 },
+      { "id": "opencode", "label": "OpenCode", "sub": "opencode serve", "x": 400, "y": 500, "w": 230, "h": 80, "accent": 2 },
+      { "id": "codex", "label": "Codex", "sub": "codex app-server", "x": 660, "y": 500, "w": 230, "h": 80, "accent": 3 }
+    ],
+    "edges": [
+      { "from": "app", "to": "bridge", "label": "HTTP / WS :1234" },
+      { "from": "app", "to": "hub", "label": "HTTP / WS :1235" },
+      { "from": "bridge", "to": "hub", "label": "supervises" },
+      { "from": "bridge", "to": "claude", "label": "stream-json" },
+      { "from": "bridge", "to": "opencode", "label": "HTTP + SSE" },
+      { "from": "bridge", "to": "codex", "label": "JSON-RPC" }
+    ]
+  }
+}
